@@ -26,8 +26,8 @@ for searchResult in searchResults:
         conn = http.client.HTTPSConnection("api.pushover.net:443")
         conn.request("POST", "/1/messages.json",
                      urllib.parse.urlencode({
-                         "token": "aixk6qwf3fz41cmh9yg49nnnrmipow",
-                         "user": "uo9ejs8f44u7uj7ne6wa5g2zsrm6is",
+                         "token": "YOUR API KEY HERE",
+                         "user": "YOUR USER KEY HERE",
                          "title": "Lando Helmet Found",
                          "message": title + " " + price,
                          "url": formattedURL,
@@ -43,8 +43,8 @@ for searchResult in searchResults:
             conn = http.client.HTTPSConnection("api.pushover.net:443")
             conn.request("POST", "/1/messages.json",
                          urllib.parse.urlencode({
-                             "token": "aixk6qwf3fz41cmh9yg49nnnrmipow",
-                             "user": "uo9ejs8f44u7uj7ne6wa5g2zsrm6is",
+                             "token": "YOUR API KEY HERE",
+                             "user": "YOUR USER KEY HERE",
                              "title": "Lando Helmet Found",
                              "message": title + " " + price,
                              "url": formattedURL,
